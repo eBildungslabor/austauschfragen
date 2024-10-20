@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Austausch- und Aufwachfragen für lernende Pädagog*innen</title>
+    <script>
+        const fragen = [
+            "Würdest Du lieber ein Barcamp oder lieber eine Konferenz besuchen? Warum?",
+            "Was schätzt Du besonders am Online-Lernen?",
+            "Was schätzt Du besonders am Lernen vor Ort?",
+            "Welche Frage stellst Du Lernenden gern?",
+            "Welche Kompetenz sollten Pädagog*innen heutzutage aus Deiner Sicht unbedingt haben?",
+            "Welcher 'Lifehack' hilft Dir bei Deiner pädagogischen Tätigkeit?",
+            "Auf welchen (digitalen oder analogen) Wegen tauschst Du Dich mit anderen Pädagog*innen aus?",
+            "Woran bist Du in Deiner Lehre zuletzt gescheitert?",
+            "Was war das letzte wertschätzende Feedback, das Du jemandem gegeben hast?",
+            "Wie entspannst Du Dich, wenn Dich Deine pädagogische Arbeit auszulaugen droht?",
+            "Warum bist Du Pädagog*in geworden?",
+            "Hast Du Dir jemals überlegt, in einem nicht-pädagogischen Bereich tätig zu sein? Wenn ja: In welchem?",
+            "Siehst Du Dich als Pädagog*in eher als Lernbegleiter*in, als Lernunterstützer*in oder als Inputgeber*in?",
+            "Wie sieht für Dich der optimale Lernraum aus?",
+            "Wenn Deine Bildungsinstitution einmalig unverhofft eine größere Summe Geld zur Verfügung hätte: Was würdest Du davon kaufen wollen?",
+            "Welche Frage bekommst Du als Pädagog*in gerne gestellt?",
+            "Über welchen pädagogischen Erfolg hast Du Dich zuletzt gefreut?",
+            "Was ist die größte pädagogische Herausforderung vor der Du aktuell stehst?",
+            "Mit welchen drei Eigenschaften würdest Du Dich selbst als Lernende beschreiben?",
+            "Mit welchen drei Eigenschaften würdest Du die Lernenden beschreiben, mit denen Du hauptsächlich zu tun hast?",
+            "An welcher Lernherausforderung bist Du selbst zuletzt gescheitert?",
+            "Was möchtest Du als nächstes lernen?",
+            "Was war in Deiner eigenen Schulzeit Dein schönstes Erlebnis beim Lernen?",
+            "Was war in Deiner eigenen Schulzeit Dein schlimmstes Erlebnis beim Lernen?",
+            "Was verbindest Du mit Noten (3 Begriffe)?",
+            "Würdest Du Dich selbst als eher digital-affin oder weniger digital-affin bezeichnen? Warum?",
+            "Was war Dein letztes Aha-Erlebnis?",
+            "Welches digitale Tool nutzt Du am häufigsten in Lernangeboten?",
+            "Was ist für Dich die wichtigste Schlüsselkompetenz in einer digitalisierten Gesellschaft?",
+            "Was würdest Du in Deiner Rolle als Pädagog*in gerne besser können?",
+            "Was sind die drei wichtigsten Merkmale guter Bildung für Dich?",
+            "Wie würdest Du die Lehren aus der Corona-Pandemie für den Bildungsbereich in einem Satz beschreiben?",
+            "Was hast Du zuletzt verlernt bzw. verlernen müssen?",
+            "Was hilft Dir bei Deinem eigenen Lernen?",
+            "In welchen Formaten lernst Du von und mit Kolleg*innen?"
+        ];
+
+        function neueFrage() {
+            const randomIndex = Math.floor(Math.random() * fragen.length);
+            document.getElementById("article").innerText = fragen[randomIndex];
+        }
+    </script>
+</head>
+
+<body onload="neueFrage()">
+
+    <main class="container">
+        <h1>Austausch- und Aufwachfragen für lernene Pädagog*innen</h1>
+
+        <article id="article">
+            <!-- Hier wird eine zufällige Frage angezeigt -->
+        </article>
+
+        <button onclick="neueFrage()">Neue Frage</button>
+
+    </main>
+
+    <footer class="container">
+        <small>Erstellt von <a href="https://ebildungslabor.de">Nele Hirsch (ebildungslabor)</a> • Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></small>
+    </footer>
+
+</body>
+
+</html>
